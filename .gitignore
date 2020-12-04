@@ -4,5 +4,7 @@
 Library
 bin
 obj
+bin.meta
+obj.meta
 Temp
 .DS_Store
