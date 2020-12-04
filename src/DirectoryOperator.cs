@@ -13,7 +13,7 @@ namespace Longshilin.Common
 {
     public class DirectoryOperator
     {
-        ///
+        /// 删除指定目录下所有内容
         public static void DeleteAll(string dirPath)
         {
             var di = new DirectoryInfo(dirPath);
