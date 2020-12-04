@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // The MIT License
 // Simple Entity Component System framework https://github.com/longshilin/longshilin.common
-// Copyright (c) 2019-2020 Longshilin <yilong0722@gmail.com>
+// Copyright (c) 2019-2020 Longshilin <583297550@qq.com>
 // ----------------------------------------------------------------------------
 
 
