@@ -1,9 +1,6 @@
-[![discord](https://img.shields.io/discord/404358247621853185.svg?label=discord)](https://discord.gg/5GZVde6)
-[![license](https://img.shields.io/github/license/Leopotam/ecs.svg)](https://github.com/Leopotam/ecs/blob/develop/LICENSE)
-# LeoECS - Simple lightweight C# Entity Component System framework
-Performance, zero/small memory allocations/footprint, no dependencies on any game engine - main goals of this project.
+[![license](https://img.shields.io/github/license/longshilin/ecs.svg)](https://github.com/longshilin/Library/blob/master/LICENSE)
 
-> **Important! It's "structs-based" version, if you search "classes-based" version - check [classes-based branch](https://github.com/Leopotam/ecs/tree/classes-based)!**
+Performance, zero/small memory allocations/footprint, no dependencies on any game engine - main goals of this project.
 
 > C#7.3 or above required for this framework.
 
@@ -16,11 +13,11 @@ Performance, zero/small memory allocations/footprint, no dependencies on any gam
 ## As unity module
 This repository can be installed as unity module directly from git url. In this way new line should be added to `Packages/manifest.json`:
 ```
-"com.leopotam.ecs": "https://github.com/Leopotam/ecs.git",
+"com.leopotam.ecs": "https://github.com/longshilin/Library.git",
 ```
 By default last released version will be used. If you need trunk / developing version then `develop` name of branch should be added after hash:
 ```
-"com.leopotam.ecs": "https://github.com/Leopotam/ecs.git#develop",
+"com.leopotam.ecs": "https://github.com/longshilin/Library.git#develop",
 ```
 
 ## As source
@@ -522,4 +519,4 @@ class MySystem : IEcsInitSystem, IEcsDestroySystem {
         _filter.RemoveListener (_listener);
     }
 }
-``` 
+```
