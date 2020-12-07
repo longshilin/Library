@@ -13,19 +13,36 @@ namespace Longshilin.Common
 {
     public class DirectoryOperator
     {
-        /// 删除指定目录下所有内容
-        public static void DeleteAll(string dirPath)
+        /// 创建指定目录
+        public static void CreateDir(string dirPath)
         {
-            var di = new DirectoryInfo(dirPath);
+            var dirInfo = new DirectoryInfo(dirPath);
+            dirInfo.Create();
 
-            foreach (var file in di.GetFiles())
+            if (!dirInfo.Exists)
+            {
+                return;
+            }
+        }
+
+        /// 删除指定目录下所有内容
+        public static void DeleteDir(string dirPath, bool isDeleteDir = true)
+        {
+            var dirInfo = new DirectoryInfo(dirPath);
+
+            foreach (var file in dirInfo.GetFiles())
             {
                 file.Delete();
             }
 
-            foreach (var dir in di.GetDirectories())
+            foreach (var dir in dirInfo.GetDirectories())
             {
                 dir.Delete(true);
+            }
+
+            if (isDeleteDir)
+            {
+                dirInfo.Delete();
             }
         }
     }
