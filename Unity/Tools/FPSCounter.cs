@@ -1,3 +1,10 @@
+// ----------------------------------------------------------------------------
+// The MIT License
+// Longshilin Library https://github.com/longshilin/longshilin.common
+// Copyright (c) 2019-2020 Longshilin <583297550@qq.com>
+// ----------------------------------------------------------------------------
+
+# if Enable_Longshilin_Unity
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,3 +43,4 @@ namespace Longshilin.Utility
         }
     }
 }
+# endif
